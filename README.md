@@ -34,7 +34,7 @@ that changing it will change the image on the button and
 selecting an image will change the text variable.
 ```python
 from tkinter import Tk, Label, StringVar
-from tk_oddbox import Images, ImageLoader, ImageMenuButton
+from tk_oddbox import Images, ImageLoader, ImageLabel, ImageMenuButton
 
 tk = Tk()
 
@@ -43,13 +43,17 @@ loader = ImageLoader(tk)
 loader.load_dir("/directory/path", "*.jpg")
 loader.load_dir("/directory/path", "*.gif")
 
-flower_label = Label(image=Images.flower)
-bear_label = Label(image=Images.bear)
+lion_image_1 = Images.lion
+lion_image_2 = Images["lion"]
+assert lion_image_1 is lion_image_2
+assert "lion" in Images
 
-animal_var = StringVar
+
+animal_var = StringVar()
 animal_var.set("lion")
 animal_choices = ["lion", "tiger", "bear"]
 
+animal_label = ImageLabel(tk, animal_var)
 animal_menu = ImageMenuButton(tk, animal_var, animal_choices) 
 
 animal_menu.grid(row=0, column=0)

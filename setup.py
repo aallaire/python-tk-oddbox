@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tk-oddbox",
-    version="0.0.1",
+    version="0.0.2",
     author="Andrew Allaire",
     author_email="andrew.allaire@gmail.com",
-    description="A few odd tkinter utilities",
+    description="Odd tkinter utilities, including image menu button",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/aallaire/python_tk_oddbox",
