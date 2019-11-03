@@ -4,9 +4,7 @@ from tk_oddbox.images import Images
 
 
 class ImageLabel(Label):
-    def __init__(
-        self, parent: Widget, string_var: StringVar, *args, **kwargs
-    ):
+    def __init__(self, parent: Widget, string_var: StringVar, *args, **kwargs):
         """Parent widget and string var are required.
 
         Args:

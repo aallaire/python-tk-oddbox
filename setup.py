@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tk-oddbox",
-    version="0.0.2",
+    version="0.0.3",
     author="Andrew Allaire",
     author_email="andrew.allaire@gmail.com",
     description="Odd tkinter utilities, including image menu button",
