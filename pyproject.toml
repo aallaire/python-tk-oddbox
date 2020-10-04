@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python-tk-oddbox"
+name = "tk_oddbox"
 version = "0.0.4"
 description = "Odd tkinter utilities, including image menu button"
 authors = ["Andrew Allaire <andrew.allaire@gmail.com>"]
