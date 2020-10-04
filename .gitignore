@@ -220,7 +220,6 @@ tags
 # End of https://www.gitignore.io/api/vim,python,intellij
 
 # Admin
-requirements.txt
-run_black.py
 sand.py
+play.py
 

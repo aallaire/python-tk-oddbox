@@ -75,6 +75,16 @@ class ImageLoader:
                 return False
         return True
 
+    def set_image(self, name: str, image: tkinter.PhotoImage):
+        """Set an image under specified name.
+
+        Args:
+            name: attribute name, e.g. "foo" means image available as Images.foo
+            image: tkinter photo image to be stored
+        """
+        self.images[name] = image
+        setattr(Images, name, image)
+
     def load_dir(self, directory: Union[Path, str], glob: str) -> int:
         """Load files within directory with specified suffix.
 
